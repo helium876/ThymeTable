@@ -1,0 +1,51 @@
+<ion-view>
+  <ion-content>
+            <form>
+            <div ng-model="tt"
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label" >Module Name</span>
+                    <input type="text" placeholder="" name="module" ng-model="tt.module" />
+                </label>
+
+                <label class="item item-select">
+                    <span class="input-label">LAB/Lecture/Tutorial</span>
+                    <select ng-model="tt.type">
+                        <option value="Lab">Lab</option>
+                        <option value="Lecture">Lecture</option>
+                        <option value="Tutorial">Tutorial</option>
+                    </select>
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label" >Room</span>
+                    <input type="text" placeholder="" ng-model="tt.room" />
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label" >Time</span>
+                    <input type="text" placeholder="" ng-model="tt.time" />
+                </label>
+
+                <label class="item item-select">
+                    <span class="input-label">Day</span>
+                    <select ng-model="tt.day">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                    </select>
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">Lecturer</span>
+                    <input type="text" placeholder="" ng-model="tt.lect" />
+                </label>
+            </ion-list>
+            <button type="submit" class="button button-stable button-block" ng-click="insert(tt.module, tt.room, tt.time, tt.day,tt.type, tt.lect)">Add Class</button>
+            </div>
+        </form>
+  </ion-content>
+</ion-view>

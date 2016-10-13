@@ -1,0 +1,46 @@
+<ion-side-menus enable-menu-with-back-views="false">
+        <ion-side-menu-content>
+          <ion-nav-bar class="bar-balanced">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+              <button class="button button-icon button-clear" 
+                      menu-toggle="left"
+                      ng-class="$ionicSideMenuDelegate.isOpen() ? 'ion-android-arrow-back' : 'ion-android-menu'">
+              </button>
+            </ion-nav-buttons>
+                     
+          </ion-nav-bar>
+
+          <ion-nav-view name="menuContent"></ion-nav-view>
+        </ion-side-menu-content> 
+
+        <ion-side-menu side="left">
+          <ion-content>
+            <ul class="list">
+              <span class="item item-header margin-top-15">
+                <!-- <h1 class="menu_ title_">ThymeTable</h1> -->
+                <!-- <img class="company-logo" src="img/logo.png"> -->
+                <div class="company-logo"></div>
+                <h3 class="ver">Alpha</h3>
+              </span>
+              <a ui-sref="app.view"
+                 ui-sref-active="active"
+                 class="item item-icon-left"
+                 menu-close>
+                <i class="icon ion-home"></i>
+                Home
+              </a>   
+
+              <a ui-sref="app.add"
+                 ui-sref-active="active"
+                 class="item item-icon-left"                
+                 menu-close>
+                <i class="icon ion-edit"></i>
+                Add
+              </a>
+            </ul>
+          </ion-content>
+        </ion-side-menu>
+      </ion-side-menus>

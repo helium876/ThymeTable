@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../font/roboto/Roboto-Regular.woff);
+}
+
+
+@font-face {
+    font-family: Robotothin;
+    src: url(../font/roboto/Roboto-Thin.woff);
+}
+
+.bak{
+	/*background-color: #607D8B;*/
+}
+
+.no_class{
+	font-family: Robotothin;
+	text-align: center;
+	padding-top: 20px;
+}
+
+*{
+	font-family: Roboto;
+}
+
+.ver{
+	text-align: right;
+	color: #fff;
+	font-family: Robotothin;
+}
+
+.module{
+	/*color: #089de3;*/
+	color: #49BA6E;
+	font-size: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 15px; 
+	margin-left: 10px;
+}
+
+.day{
+	color: grey;
+	float: right;
+	font-size: 20px;
+
+}
+
+.room{
+	float: left;
+	font-style: bold;
+	font-size: 20px;
+	color: grey;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-weight: 100;
+
+}
+
+.time{
+	float: right;
+	font-size: 20px;
+	color: grey;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-weight: 100;
+
+}
+
+.lect{
+	color: grey;
+	font-size: 20px;
+	margin-left: 10px;
+	font-weight: 100;
+}
+
+
+.card{
+	/*background-color: #B2DFDB;*/
+	border: solid #49BA6E 1px;
+}

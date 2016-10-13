@@ -1,0 +1,19 @@
+<ion-view ng-init="load()">
+<!-- <ion-view> -->
+  <ion-content class="bak">
+  	<!-- <div ng-hide="output | isEmpty">
+  		<h2 class="no_class">No Classes found!</h2>
+  	</div> -->
+    <div class="card" ng-repeat="item in output" on-hold="callIt(item.id)"> 
+    <!--/*on-hold="onHold($index, item, $event)"-->
+              <!--<div ng-if="getColor(ttable.type)"></div>-->
+		<div class="item item-text-wrap">
+		  <div class="module">{{item.className}}</div>
+		  <div class="day">{{item.day}}</div>
+		  <div class="lect">Lecturer: {{item.lecturer}}</div><br>
+		  <div class="room">{{item.room}}</div>
+		  <div class="time">{{item.time}}</div>
+		</div> 
+	</div>
+  </ion-content>
+</ion-view>

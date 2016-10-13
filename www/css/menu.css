@@ -1,0 +1,130 @@
+/*Android*/
+.company-logo {
+  vertical-align: middle;
+  max-width: 90%;
+  content: url("../img/logo.png");
+}
+
+.bar-balanced {
+  background-color: #1aa1e1 !important;
+  border-color: #1791ca !important;
+}
+
+.platform-android {
+  /* Override the Ionic icons with Android specific ones */
+}
+.platform-android .menu {
+  background-color: #174790 !important;
+}
+.platform-android .menu a:not(.item-divider):hover, .platform-android .menu a:not(.item-divider):active {
+  background-color: #464646;
+  background-image: linear-gradient(left, #1aa1e1, #1aa1e1 7px, transparent 7px, transparent 100%) !important;
+  background-image: -webkit-linear-gradient(left, #1aa1e1, #1aa1e1 7px, transparent 7px, transparent 100%) !important;
+}
+.platform-android .menu .active {
+  background-color: #464646 !important;
+  background-image: linear-gradient(left, #1aa1e1, #1aa1e1 7px, transparent 7px, transparent 100%) !important;
+  background-image: -webkit-linear-gradient(left, #1aa1e1, #1aa1e1 7px, transparent 7px, transparent 100%) !important;
+}
+.platform-android .menu .item, .platform-android .menu .bar-header {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.platform-android .menu .item i:before, .platform-android .menu .bar-header i:before {
+  font-size: 22px;
+}
+.platform-android .menu .bar-header {
+  background-color: #1aa1e1;
+}
+.platform-android .ion-home:before {
+  content: "\f38f";
+}
+.platform-android .ion-compose:before {
+  content: "\f373";
+}
+.platform-android .ion-person:before {
+  content: "\f2d9";
+}
+
+
+
+/*iOS*/
+
+body {
+  cursor: url("http://ionicframework.com/img/finger.png"), auto;
+}
+
+.item {
+  font-size: 14px !important;
+}
+
+
+.bar-balanced {
+  background-color: #174790 !important;
+  border-color: #133c7a !important;
+}
+
+/* Apply this theme to iOS only */
+.platform-ios {
+  /* 
+  Override the Ionic icons with iOS specific ones 
+  You could also name the icon class something custom in the html
+  and then @extend the ionic icon class like this
+  
+  .ion-custom-close {
+    @extend .ion-ios-close-empty
+  }
+  */
+}
+.platform-ios .ion-home:before {
+  content: "\f448";
+}
+.platform-ios .menu, .platform-ios .view {
+  background: #174790;
+  background: -moz-radial-gradient(center, ellipse cover, #2e599b 0%, #123873 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #2e599b), color-stop(100%, #123873));
+  background: -webkit-radial-gradient(center, ellipse cover, #2e599b 0%, #123873 100%);
+  background: -o-radial-gradient(center, ellipse cover, #2e599b 0%, #123873 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #2e599b 0%, #123873 100%);
+  background: radial-gradient(ellipse at center, #2e599b 0%, #123873 100%);
+}
+.platform-ios .menu .item-header {
+  padding-top: 25px;
+  opacity: 1.0;
+}
+.platform-ios .menu .item:not(.item-header) {
+  opacity: 0.7;
+}
+.platform-ios .menu .item {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  border-color: #E7E7E7;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.platform-ios .menu .item i:before {
+  font-size: 22px;
+}
+.platform-ios .menu a:not(.item-divider):hover, .platform-ios .menu a:not(.item-divider):active, .platform-ios .menu .active {
+  opacity: 1.0 !important;
+  font-weight: bold;
+}
+.platform-ios .menu a:not(.item-divider):hover i:before, .platform-ios .menu a:not(.item-divider):active i:before, .platform-ios .menu .active i:before {
+  font-weight: bold !important;
+}
+.platform-ios .menu .bar-header {
+  background-color: #174790;
+}
+.platform-ios .ion-home:before {
+  content: "\f448 ";
+}
+.platform-ios .ion-compose:before {
+  content: "\f417";
+}
+.platform-ios .ion-person:before {
+  content: "\f47c";
+}
