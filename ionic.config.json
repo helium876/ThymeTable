@@ -1,0 +1,8 @@
+{
+  "name": "ThymeTable",
+  "app_id": "d3e4b67c",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
