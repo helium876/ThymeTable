@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 
 @IonicPage()
@@ -8,10 +8,23 @@ import { Storage } from '@ionic/storage';
   templateUrl: 'start.html',
 })
 export class StartPage {
+  loader:any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private store: Storage, private loadingCtrl: LoadingController) {
+  
+    this.loader = this.loadingCtrl.create({
+      content: "Please Wait...Tapping UTech's Severs"
+    });
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private store: Storage) {
   }
 
+  getUTech(){
+    this.loader.present();
+    setTimeout(() => {
+    this.loader.dismiss();
+    }, 3000);
+  }
+
+ 
   ionViewDidLoad() {
     console.log('ionViewDidLoad StartPage');
     this.store.get('timeTable').then(data =>{

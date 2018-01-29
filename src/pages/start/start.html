@@ -1,15 +1,42 @@
-<ion-slides pager>
+<ion-content class="tutorial-page">
 
-  <ion-slide style="background-color: #CCC">
-    
-  </ion-slide>
+  <ion-slides pager>
+    <ion-slide>
+    	<img src="assets/imgs/logo.png" alt="ThymeTable" class="icon">
+      <h2 class="slide-title">ThymeTable</h2>
+      <p>Welcome to UTech's ThymeTable. </p>
+    </ion-slide>
 
-  <ion-slide>
-    
-  </ion-slide>
+    <ion-slide>
+    	<ion-content>
+    	<img src="assets/imgs/utech.png" alt="UTech" class="icon">
 
-  <ion-slide>
-    
-  </ion-slide>
+	      <p>Lets Pull your TimeTable from UTech Servers</p>
+	      	<ion-list>
 
-</ion-slides>
+				<ion-item>
+				  <ion-label fixed>Username</ion-label>
+				  <ion-input type="text"></ion-input>
+				</ion-item>
+
+				<ion-item>
+				  <ion-label fixed>Password</ion-label>
+				  <ion-input type="password"></ion-input>
+				</ion-item>
+
+				<ion-item>
+				  <ion-label fixed>Date of Birth</ion-label>
+				  <ion-input type="password"></ion-input>
+				</ion-item>
+
+			</ion-list>
+	      <button (click)='getUTech();' ion-button large clear icon-end color="primary">
+	        Continue
+	        <ion-icon name="arrow-forward"></ion-icon>
+	      </button>
+  		</ion-content>
+    </ion-slide>
+
+
+  </ion-slides>
+</ion-content>
