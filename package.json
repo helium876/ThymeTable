@@ -1,8 +1,8 @@
 {
   "name": "ThymeTable",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "IEEE UTech",
+  "homepage": "http://www.ieeeutech.com/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -20,12 +20,21 @@
     "@angular/http": "5.0.3",
     "@angular/platform-browser": "5.0.3",
     "@angular/platform-browser-dynamic": "5.0.3",
-    "@ionic-native/core": "4.4.0",
-    "@ionic-native/splash-screen": "4.4.0",
-    "@ionic-native/status-bar": "4.4.0",
+    "@ionic-native/core": "4.5.3",
+    "@ionic-native/native-storage": "4.5.3",
+    "@ionic-native/splash-screen": "4.5.3",
+    "@ionic-native/status-bar": "4.5.3",
     "@ionic/pro": "1.0.16",
-    "@ionic/storage": "2.1.3",
+    "@ionic/storage": "^2.1.3",
+    "cordova-android": "^6.2.3",
+    "cordova-plugin-device": "^1.1.4",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-nativestorage": "^2.2.2",
+    "cordova-plugin-splashscreen": "^4.0.3",
+    "cordova-plugin-whitelist": "^1.3.1",
+    "cordova-sqlite-storage": "^2.2.0",
     "ionic-angular": "3.9.2",
+    "ionic-plugin-keyboard": "^2.2.1",
     "ionicons": "3.0.0",
     "rxjs": "5.5.2",
     "sw-toolbox": "3.6.0",
@@ -35,5 +44,19 @@
     "@ionic/app-scripts": "3.1.8",
     "typescript": "2.4.2"
   },
-  "description": "An Ionic project"
+  "description": "Timetable App for UTech Students.",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-nativestorage": {},
+      "cordova-sqlite-storage": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-whitelist": {},
+      "ionic-plugin-keyboard": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
 }
